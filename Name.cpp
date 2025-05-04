@@ -1,5 +1,11 @@
 #include <iostream>
 using namespace std;
+
+void Name(int i , int n){
+    if(i > n) return;
+    cout << "Ankit Kumar \n";
+    Name(i+1,n);
+}
 void name(int n)
 {
     if(n==0){
@@ -17,5 +23,6 @@ int main()
     cout << "Enter no : " << endl;
     cin >> n;
     name(n);
+    Name(1,n);
     return 0;
 }
